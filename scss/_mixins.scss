@@ -1,0 +1,13 @@
+@mixin roundbox{
+	background:white;
+	border:2px double black;
+	padding:15px;
+	border-radius: 25px;	
+}
+@mixin eyeCatcher{
+	font-family:monospace;
+	font-size:3em;
+	color:white;
+	text-align: center;
+	text-decoration: underline;
+}

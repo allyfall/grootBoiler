@@ -3,3 +3,62 @@ p{
 	color:$acColor;
 	background-color: $bgColor;
 }
+li{
+	display: inline-block;
+	padding:3%;
+	text-align: center;
+}
+ul{
+	margin-left: 25%;
+	a{
+		text-decoration: none;
+		font-family: serif;
+		color:$acColor;
+	}
+}
+h1{
+	margin-left: 15%;
+	font-family: cursive;
+}
+.gridbod{
+	display: grid;
+	grid-template-rows: 100px 400px 80px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"upper upper navi navi"
+		"stuff stuff stuff side"
+		"feet feet feet feet"
+}
+
+.upper{
+	grid-area: upper;
+}
+.navi{
+	grid-area: navi;
+}
+.stuff{
+	grid-area: stuff;
+	background:$bgColor;
+	margin:5%;
+	padding:2%;
+	h2{
+		text-align: center;
+	}
+}
+.side{
+	grid-area: side;
+	background:$bgColor;
+	margin-right:2%;
+	h3{
+		text-align: center;	
+	}
+	p{
+		padding-left: 4%;
+	}
+}
+.feet{
+	grid-area: feet;
+	ul{
+		margin-left:30%;
+	}
+}

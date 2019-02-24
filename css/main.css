@@ -428,6 +428,70 @@ p {
   background-color: bisque;
 }
 
+li {
+  display: inline-block;
+  padding: 3%;
+  text-align: center;
+}
+
+ul {
+  margin-left: 25%;
+}
+ul a {
+  text-decoration: none;
+  font-family: serif;
+  color: maroon;
+}
+
+h1 {
+  margin-left: 15%;
+  font-family: cursive;
+}
+
+.gridbod {
+  display: grid;
+  grid-template-rows: 100px 400px 80px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "upper upper navi navi" "stuff stuff stuff side" "feet feet feet feet";
+}
+
+.upper {
+  grid-area: upper;
+}
+
+.navi {
+  grid-area: navi;
+}
+
+.stuff {
+  grid-area: stuff;
+  background: bisque;
+  margin: 5%;
+  padding: 2%;
+}
+.stuff h2 {
+  text-align: center;
+}
+
+.side {
+  grid-area: side;
+  background: bisque;
+  margin-right: 2%;
+}
+.side h3 {
+  text-align: center;
+}
+.side p {
+  padding-left: 4%;
+}
+
+.feet {
+  grid-area: feet;
+}
+.feet ul {
+  margin-left: 30%;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
